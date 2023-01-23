@@ -13,9 +13,6 @@
 - MoneyManager
 - Logi options+
 
-
-
-
 ## Brew
 
 - fzf
@@ -24,3 +21,15 @@
 - node
 - tmux
 - zsh
+
+## VSCode Extension
+
+- 42Header
+- Atom One Dark Theme
+- Code Runner
+- CodeLLDB
+- Doxygen
+- ESLint
+- GitLens
+- Prettier
+- Vim (option)
