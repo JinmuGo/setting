@@ -34,3 +34,15 @@
 - GitLens
 - Prettier
 - Vim (option)
+- Material Icon
+
+
+## Font
+
+- Iterm2 menslo
+- VsCode D2Coding
+
+## Iterm2
+
+- logo-ls
+- nvim
