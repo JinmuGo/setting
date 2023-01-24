@@ -39,8 +39,8 @@
 
 ## Font
 
-- Iterm2 menslo
-- VsCode D2Coding
+- Iterm2 mesloLGS NF
+- VsCode mesloLGS NF
 
 ## Iterm2
 
