@@ -21,6 +21,7 @@
 - node
 - tmux
 - zsh
+- reattach-to-user-namespace
 
 ## VSCode Extension
 
