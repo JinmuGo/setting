@@ -156,3 +156,7 @@ mkcd ()
     mkdir -p -- "$1" &&
        cd -P -- "$1"
 }
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+alias copy="pbcopy"
