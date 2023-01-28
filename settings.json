@@ -1,0 +1,17 @@
+{
+    "workbench.colorTheme": "Atom One Dark",
+    "42header.email": "jgo@student.42seoul.fr",
+    "42header.username": "jgo",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "MesloLGS NF",
+    "editor.fontSize": 16,
+    "debug.console.fontSize": 16,
+    "terminal.integrated.fontSize": 14,
+    "security.workspace.trust.untrustedFiles": "open",
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": true,
+    "code-runner.runInTerminal": true,
+    "explorer.confirmDelete": false,
+    "debug.inlineValues": "on",
+    "terminal.external.osxExec": "iTerm.app"
+}
