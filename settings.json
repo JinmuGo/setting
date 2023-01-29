@@ -13,5 +13,10 @@
     "code-runner.runInTerminal": true,
     "explorer.confirmDelete": false,
     "debug.inlineValues": "on",
-    "terminal.external.osxExec": "iTerm.app"
+    "terminal.external.osxExec": "iTerm.app",
+    "window.zoomLevel": 1,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "code-runner.ignoreSelection": true,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.enabled": false
 }
