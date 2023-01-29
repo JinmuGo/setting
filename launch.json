@@ -8,7 +8,7 @@
             "type": "lldb",
             "request": "launch",
             "name": "Debug",
-            "program": "${workspaceFolder}/12605",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}",
             "console": "externalTerminal",
             "args": [],
             "cwd": "${workspaceFolder}"
