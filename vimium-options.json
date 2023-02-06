@@ -13,7 +13,7 @@
   "filterLinkHints": false,
   "waitForEnterForFilteredHints": true,
   "hideHud": false,
-  "keyMappings": "unmap x\nunmap /\nunmap f\nunmap X\nunmap F\nunmap >>\nunmap <<\nunmap y\nunmap p\nunmap m\nmap e LinkHints.activateMode\nmap w removeTab\nmap q restoreTab\nmap E LinkHints.activateModeToOpenInNewTab\nmap y moveTabLeft\nmap p moveTabRight",
+  "keyMappings": "unmap x\nunmap /\nunmap f\nunmap X\nunmap F\nunmap i\nunmap >>\nunmap <<\nunmap y\nunmap p\nmap e LinkHints.activateMode\nmap w removeTab\nmap q restoreTab\nmap E LinkHints.activateModeToOpenInNewTab\nmap y moveTabLeft\nmap p moveTabRight",
   "linkHintCharacters": "sadfjklewcmpgh",
   "linkHintNumbers": "0123456789",
   "newTabUrl": "about:newtab",
