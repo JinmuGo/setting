@@ -25,9 +25,9 @@ else
   echo "== installed brew successfully =="
 fi
 
-if [[ -x "$(command -v tmux)" ]]
+if [[ -n "command -v tmux" ]]
 then
-  echo "== tmux exists =="
+  echo "== tmux exists ==" 
 else
   brew install tmux
   echo "== installed tmux successfully =="
@@ -41,7 +41,15 @@ else
   echo "== installed maccy successfully =="
 fi
 
-if [[ -d "$(command -v autojump)" ]]
+if [[ -d "$HOME/goinfre/.brew/Caskroom/notion" ]]
+then
+  echo "== notion exists =="
+else
+  brew install notion --appdir=$HOME/goinfre/Applications
+  echo "== installed notion successfully =="
+fi
+
+if [[ -n "command -v autojump" ]]
 then
   echo "== autojump exists =="
 else
@@ -49,7 +57,15 @@ else
   echo "== installed autojump successfully =="
 fi
 
-if [[ -d "$(command -v gitmoji)" ]]
+if [[ -n "command -v pre-commit" ]]
+then
+  echo "== pre-commit exists =="
+else
+  brew install pre-commit --appdir=$HOME/goinfre/Applications
+  echo "== installed pre-commit successfully =="
+fi
+
+if [[ -n "command -v gitmoji" ]]
 then
   echo "== gitmoji exists =="
 else
