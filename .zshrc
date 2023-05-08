@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -15,7 +15,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
@@ -84,7 +83,11 @@ plugins=(
   fzf
   tmux
   tmuxinator
-  fasd
+  autojump
+  node
+  brew
+  npm
+  docker
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -146,6 +149,8 @@ alias francinette=/Users/situso/francinette/tester.sh
 alias paco=/Users/situso/francinette/tester.sh
 alias gs='git status'
 alias pi='ssh jgopi'
+alias ba='bat'
+alias ca='cat'
 
 alias openC='open -a /Applications/Google\ Chrome.app'
 
@@ -156,7 +161,54 @@ mkcd ()
     mkdir -p -- "$1" &&
        cd -P -- "$1"
 }
+
+noex ()
+{
+	find . -type f '!' -name '*.*' -exec rm {} +
+}
+
+deex ()
+{
+	find . -type d -name '*.dSYM' -exec rm -rf {} +
+}
+
+function gclr() {
+	repo_url=$1
+	folder_name=$2
+
+	if [ -z "$folder_name" ]; then
+        folder_name="$(basename "$repo_url" .git)"
+    fi
+    gcl $repo_url $folder_name &&
+	cd $folder_name &&
+	git submodule foreach --recursive 'git sw main && gitmoji -i && pre-commit install'
+    gitmoji -i
+}
+
+alias lt="lsd --tree --no-symlink"
+
 source ~/powerlevel10k/powerlevel10k.zsh-theme
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 alias copy="pbcopy"
+alias norm="/Users/jgo/Library/Python/3.9/bin/norminette"
+alias cxx="clang"
+alias mf="make fclean"
+alias mc="make clean"
+alias ma="make all"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/homebrew/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/homebrew/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
