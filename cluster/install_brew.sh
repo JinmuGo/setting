@@ -19,20 +19,21 @@ then
   echo "== brew exists =="
 else
   ln -s "$HOME/goinfre/.brew" "$HOME/.brew"
-#echo 'export PATH=$HOME/goinfre/.brew/bin:$PATH' >> $HOME/.zshrc
+  echo 'export PATH=$HOME/goinfre/.brew/bin:$PATH' >> $HOME/.zshrc
   source $HOME/.zshrc
   brew update
   echo "== installed brew successfully =="
 fi
 
-if [[ -d "$HOME/goinfre/Applications/Maccy.app" ]]
+if [[ -d "$HOME/goinfre/.brew/Caskroom/maccy" ]]
 then
   echo "== maccy exists =="
 else
   brew install maccy --appdir=$HOME/goinfre/Applications
   echo "== installed maccy successfully =="
 fi
-if [[ -d "$HOME/goinfre/Applications/Notion.app" ]]
+
+if [[ -d "$HOME/goinfre/.brew/Caskroom/notion" ]]
 then
   echo "== notion exists =="
 else
@@ -40,8 +41,7 @@ else
   echo "== installed notion successfully =="
 fi
 
-
-if [[ -d "$HOME/goinfre/Applications/Cron.app" ]]
+if [[ -d "$HOME/goinfre/.brew/Caskroom/cron" ]]
 then
   echo "== cron exists =="
 else
@@ -55,14 +55,6 @@ then
 else
   brew install tmux --appdir=$HOME/goinfre/Applications
   echo "== installed tmux successfully =="
-fi
-
-if [[ -x "$(command -v reattach-to-user-namespace)" ]]
-then
-  echo "== reattach-to-user-namespace exists =="
-else
-  brew reinstall reattach-to-user-namespace --appdir=$HOME/goinfre/Applications
-  echo "== installed reattach-to-user-namespace successfully =="
 fi
 
 if [[ -x "$(command -v pre-commit)" ]]
@@ -95,38 +87,6 @@ then
 else
   brew install gh --appdir=$HOME/goinfre/Applications
   echo "== installed gh successfully =="
-fi
-
-if [[ -x "$(command -v clang-format)" ]]
-then
-  echo "== clang-format exists =="
-else
-  brew install clang-format --appdir=$HOME/goinfre/Applications
-  echo "== installed clang-format successfully =="
-fi
-
-if [[ -x "$(command -v tree)" ]]
-then
-  echo "== tree exists =="
-else
-  brew install tree --appdir=$HOME/goinfre/Applications
-  echo "== installed tree successfully =="
-fi
-
-if [[ -x "$(command -v fzf)" ]]
-then
-  echo "== fzf exists =="
-else
-  brew install fzf --appdir=$HOME/goinfre/Applications
-  echo "== installed fzf successfully =="
-fi
-
-if [[ -x "$(command -v pygmentize)" ]]
-then
-  echo "== pygments exists =="
-else
-  brew install pygments --appdir=$HOME/goinfre/Applications
-  echo "== installed pygments successfully =="
 fi
 
 # if [[ -d "$HOME/goinfre/.brew/Caskroom/obsidian" ]]

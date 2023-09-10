@@ -80,7 +80,6 @@ plugins=(
   git
   zsh-syntax-highlighting
   zsh-autosuggestions
-  fzf
   tmux
   tmuxinator
   autojump
@@ -121,39 +120,11 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-alias vim="nvim"
-alias vi="nvim"
-alias vimdiff="nvim -d"
-export EDITOR=/usr/local/bin/nvim
-
 # example alias
-
-alias nyancat="/Volumes/Situso/Coding/etc/nyancat/src/nyancat"
-
-alias mysql="/usr/local/mysql/bin && ./mysql -uroot -p"
-alias sc="/Volumes/Situso/Coding"
-alias 42="j 42cursus"
-
-alias ls='logo-ls'
-alias la='logo-ls -A'
-alias ll='logo-ls -al'
-# equivalents with Git Status on by Default
-alias lsg='logo-ls -D'
-alias lag='logo-ls -AD'
-alias llg='logo-ls -alD'
-
-alias c='clear' 
-
-alias francinette=/Users/situso/francinette/tester.sh
-
-alias paco=/Users/situso/francinette/tester.sh
 alias gs='git status'
-alias pi='ssh jgopi'
-alias ba='bat'
-alias ca='cat'
-
-alias openC='open -a /Applications/Google\ Chrome.app'
-
+alias dp="docker ps"
+alias dcpr="docker container prune"
+alias dcu="docker compose up"
 bindkey '  ' autosuggest-accept
 
 mkcd ()
@@ -179,36 +150,24 @@ function gclr() {
 	if [ -z "$folder_name" ]; then
         folder_name="$(basename "$repo_url" .git)"
     fi
-    gcl $repo_url $folder_name &&
-	cd $folder_name &&
-	git submodule foreach --recursive 'git sw main && gitmoji -i && pre-commit install'
+    gcl -j8 $repo_url $folder_name &&
+	cd $folder_name && 
+	git submodule foreach --recursive 'gitmoji -i && pre-commit install' &&
     gitmoji -i
 }
 
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
 alias lt="lsd --tree --no-symlink"
-
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-
 alias copy="pbcopy"
-alias norm="/Users/jgo/Library/Python/3.9/bin/norminette"
-alias cxx="clang"
 alias mf="make fclean"
 alias mc="make clean"
 alias ma="make all"
+alias mr="make re"
+alias mb="make bonus"
+alias gcn="git commit --no-verify -m"
+alias dvrm="docker volume rm"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/homebrew/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/opt/homebrew/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/homebrew/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+export PATH=$HOME/goinfre/.brew/bin:$PATH
 

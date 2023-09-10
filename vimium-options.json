@@ -1,5 +1,5 @@
 {
-  "settingsVersion": "1.67.4",
+  "settingsVersion": "1.67.7",
   "exclusionRules": [
     {
       "pattern": "https?://mail.google.com/*",
@@ -8,12 +8,24 @@
     {
       "pattern": "https?://app.gather.town/*",
       "passKeys": ""
+    },
+    {
+      "pattern": "https://oyhoyhk.github.io/",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://www.youtube.com/*",
+      "passKeys": "m"
+    },
+    {
+      "pattern": "https?://www.youtube.com/*",
+      "passKeys": "M"
     }
   ],
   "filterLinkHints": false,
   "waitForEnterForFilteredHints": true,
   "hideHud": false,
-  "keyMappings": "unmap x\nunmap /\nunmap f\nunmap X\nunmap F\nunmap i\nunmap >>\nunmap <<\nunmap y\nunmap p\nmap e LinkHints.activateMode\nmap w removeTab\nmap q restoreTab\nmap E LinkHints.activateModeToOpenInNewTab\nmap y moveTabLeft\nmap p moveTabRight",
+  "keyMappings": "unmap x\nunmap /\nunmap f\nunmap X\nunmap F\nunmap i\nunmap >>\nunmap <<\nunmap y\nunmap p\nunmap v\nmap e LinkHints.activateMode\nmap w removeTab\nmap q restoreTab\nmap E LinkHints.activateModeToOpenInNewTab\nmap y moveTabLeft\nmap p moveTabRight",
   "linkHintCharacters": "sadfjklewcmpgh",
   "linkHintNumbers": "0123456789",
   "newTabUrl": "about:newtab",

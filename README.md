@@ -1,17 +1,12 @@
 ## Application
 
-- BetterSnapTool
-- BetterTouchTool
 - iTerm
-- Discord
 - Figma
 - Notion
-- Karabiner
 - RunCat
 - Slack
 - VScode
-- MoneyManager
-- Logi options+
+- Rectangle
 
 ## Brew
 
@@ -44,10 +39,13 @@
 
 ## Font
 
-- Iterm2 mesloLGS NF
-- VsCode mesloLGS NF
+- Iterm2 mesloLGS NF 400
+- VsCode Inconsolata 500
 
 ## Iterm2
 
 - logo-ls
 - nvim
+- tmux
+- zsh-syntax-highlighting
+- zsh-autosuggestions
