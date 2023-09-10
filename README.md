@@ -21,21 +21,26 @@
 - node
 - tmux
 - zsh
+- clang-format
 - reattach-to-user-namespace
 
 ## VSCode Extension
 
 - 42Header
-- Atom One Dark Theme
+- Atom One Dark Pro Theme
 - Code Runner
 - CodeLLDB
 - Doxygen
 - ESLint
 - GitLens
 - Prettier
-- Vim (option)
+- Vim
 - Material Icon
-
+- Remote - SSH
+- Live Server
+- Docker
+- Dev Containers
+- vscode-pdf
 
 ## Font
 
