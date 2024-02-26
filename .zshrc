@@ -166,6 +166,7 @@ alias ma="make all"
 alias mr="make re"
 alias mb="make bonus"
 alias gcn="git commit --no-verify -m"
+alias ga="git a"
 alias dvrm="docker volume rm"
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
