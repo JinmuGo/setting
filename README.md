@@ -2,11 +2,15 @@
 
 - iTerm
 - Figma
-- Notion
 - RunCat
 - Slack
 - VScode
 - Rectangle
+- Zotero
+- Obisidian 
+- MoneyManager
+- deepL
+- Arc
 
 ## Brew
 
@@ -18,6 +22,8 @@
 - zsh
 - clang-format
 - reattach-to-user-namespace
+- gureumkim
+- maccy
 
 ## VSCode Extension
 
@@ -44,8 +50,11 @@
 
 ## Iterm2
 
+### Not using oh-my-zsh...
+
 - logo-ls
 - nvim
 - tmux
 - zsh-syntax-highlighting
 - zsh-autosuggestions
+- autojump
