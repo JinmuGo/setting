@@ -1,6 +1,6 @@
 ## Application
 
-- iTerm
+- Alacritty
 - Figma
 - RunCat
 - Slack
@@ -24,10 +24,12 @@
 - reattach-to-user-namespace
 - gureumkim
 - maccy
+- eza
+- starship
+- git-delta
 
 ## VSCode Extension
 
-- 42Header
 - Atom One Dark Pro Theme
 - Code Runner
 - CodeLLDB
@@ -42,17 +44,15 @@
 - Docker
 - Dev Containers
 - vscode-pdf
+- neovim
 
 ## Font
 
-- Iterm2 mesloLGS NF 400
+- Alacritty mesloLGS NF 400
 - VsCode Inconsolata 500
 
-## Iterm2
+### Not using oh-my-zsh
 
-### Not using oh-my-zsh...
-
-- logo-ls
 - nvim
 - tmux
 - zsh-syntax-highlighting
