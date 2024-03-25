@@ -1,22 +1,131 @@
 {
-    "workbench.colorTheme": "Atom One Dark",
-    "42header.email": "jgo@student.42seoul.fr",
-    "42header.username": "jgo",
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.fontFamily": "MesloLGS NF",
-    "editor.fontSize": 16,
-    "debug.console.fontSize": 16,
-    "terminal.integrated.fontSize": 14,
-    "security.workspace.trust.untrustedFiles": "open",
-    "prettier.tabWidth": 4,
-    "prettier.useTabs": true,
-    "code-runner.runInTerminal": true,
-    "explorer.confirmDelete": false,
-    "debug.inlineValues": "on",
-    "terminal.external.osxExec": "iTerm.app",
-    "window.zoomLevel": 1,
-    "terminal.integrated.enableMultiLinePasteWarning": false,
-    "code-runner.ignoreSelection": true,
-    "gitlens.codeLens.authors.enabled": false,
-    "gitlens.codeLens.enabled": false
+  "window.zoomLevel": 2,
+
+  // WORKBENCH SETTING
+
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.statusBar.visible": false,
+
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "workbench.colorCustomizations": {
+    // "editorSuggestWidget.selectedBackground": "#231739",
+    // "sideBar.background": "#140E1A",
+    // "list.activeSelectionBackground": "#ff0000"
+    // "list.focusBackground": "#ff0000",
+    // "list.hoverBackground": "#ff0000"
+  },
+  // EDITOR SETTING
+
+  "editor.minimap.enabled": false,
+  "editor.guides.indentation": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderLineHighlight": "none",
+  "editor.matchBrackets": "never",
+  "editor.lightbulb.enabled": "off",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.cursorBlinking": "blink",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+
+  // GENERAL SETTING
+  "breadcrumbs.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "extensions.ignoreRecommendations": true,
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.env.osx": {
+    "CW_NEW_SESSION": "1"
+  },
+
+  "accessibility.signals.lineHasInlineSuggestion": {
+    "sound": "off"
+  },
+
+  "accessibility.signals.sounds.volume": 0,
+  "editor.accessibilitySupport": "off",
+
+  // APC SETTING
+
+  "apc.menubar.compact": true,
+
+  "apc.header": {
+    "show": false
+  },
+
+  "apc.activityBar": {
+    "itemSize": 40,
+    "size": 40
+  },
+
+  "apc.listRow": {
+    "lists": ["explorer-folders-view", "quick-input-list", "results"]
+  },
+
+  // ANIMATION SETTING
+  "animations.Install-Method": "Apc Customize UI++",
+  "apc.imports": [
+    "file:///Users/jgo/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
+  ],
+  "animations.Active": "None",
+  "animations.Command-Palette": "Slide",
+  "animations.Enabled": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // TODO HIGHLIGHT SETTING
+
+  "todohighlight.keywords": [
+    {
+      "text": "TODO",
+      "color": "#FFB6C1", // Light Pink
+      "backgroundColor": "#3f3f2f", // Desaturated dark green (complementary to Light Pink)
+      "overviewRulerColor": "rgba(255,182,193,0.8)",
+      "isWholeLine": true
+    },
+    {
+      "text": "FIXME",
+      "color": "#ADD8E6", // Light Blue
+      "backgroundColor": "#3f2f2f", // Desaturated dark orange (complementary to Light Blue)
+      "overviewRulerColor": "rgba(173,216,230,0.8)",
+      "isWholeLine": true
+    },
+    {
+      "text": "NOTE",
+      "color": "#3CB371", // Medium Sea Green
+      "backgroundColor": "#3f2f3f", // Desaturated dark magenta (complementary to Medium Sea Green)
+      "overviewRulerColor": "rgba(60,179,113,0.8)",
+      "isWholeLine": true
+    }
+  ],
+  "git.autofetch": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gitlens.showWelcomeOnInstall": false,
+  "gitlens.showWhatsNewAfterUpgrades": false,
+
+  // "terminal.integrated.tabs.enabled": false
+
+  // nvim
+
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/vscode_init.lua",
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "editor.fontFamily": "SFMono Nerd Font"
 }

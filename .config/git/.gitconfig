@@ -1,22 +1,30 @@
 [user]
-	name = jgo-42
+	name = JinMuGo
 	email = jingmuio@gmail.com
 [core]
 	precomposeunicode = true
 	quotepath = false
 	autocrlf = input
-	excludesfile = /Users/situso/.gitignore_global
-	editor = vim
+	editor = nvim
+    pager = delta
 [init]
 	defaultBranch = main
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true
+    side-by-side = true
+    line-numbers = true
+[merge]
+    conflictstyle = diff3
+[diff]
+    colorMoved = default
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[commit]
-	template = /Users/situso/.stCommitMsg
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -91,3 +99,5 @@
     | column -t -s'=' \
     | sed 's/!#* *//; s/;$//' \
     | cut -c1-85"
+[diff]
+	tool = vimdiff
