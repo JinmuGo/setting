@@ -2,7 +2,6 @@
 
 - Alacritty
 - Figma
-- RunCat
 - Slack
 - VScode
 - Rectangle
@@ -12,7 +11,6 @@
 - deepL
 - Arc
 - lunar vim
-- stats
 
 ## Brew
 
@@ -32,6 +30,7 @@
 - ripgrep
 - nvim
 - autojump
+- stats
 
 ## VSCode Extension
 
