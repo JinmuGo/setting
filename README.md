@@ -12,6 +12,7 @@
 - deepL
 - Arc
 - lunar vim
+- stats
 
 ## Brew
 
