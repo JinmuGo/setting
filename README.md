@@ -11,6 +11,7 @@
 - MoneyManager
 - deepL
 - Arc
+- lunar vim
 
 ## Brew
 
@@ -27,6 +28,7 @@
 - eza
 - starship
 - git-delta
+- ripgrep
 
 ## VSCode Extension
 
