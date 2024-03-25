@@ -30,6 +30,8 @@
 - starship
 - git-delta
 - ripgrep
+- nvim
+- autojump
 
 ## VSCode Extension
 
@@ -51,13 +53,5 @@
 
 ## Font
 
-- Alacritty mesloLGS NF 400
+- Alacritty SFMono Nerd Font 400
 - VsCode Inconsolata 500
-
-### Not using oh-my-zsh
-
-- nvim
-- tmux
-- zsh-syntax-highlighting
-- zsh-autosuggestions
-- autojump
