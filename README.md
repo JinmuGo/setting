@@ -11,6 +11,7 @@
 - deepL
 - Arc
 - lunar vim
+- Publish or Perish
 
 ## Brew
 
