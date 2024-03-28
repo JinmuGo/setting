@@ -1,8 +1,10 @@
 export PATH=$HOME/bin:/usr/local/bin:/opt/bin:/opt/homebrew/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 ### ZSH HOME
 export ZSH=$HOME/.config/zsh
@@ -35,6 +37,7 @@ source $ZSH/plugins/zsh-git/git.plugin.zsh
 source $ZSH/plugins/zsh-tmux/tmux.plugin.zsh
 source $ZSH/plugins/zsh-docker/zsh-docker.plugin.zsh
 source $ZSH/plugins/zsh-docker-compose/docker-compose.plugin.zsh
+source $ZSH/plugins/zsh-fzf/fzf.plugin.zsh
 fpath=($ZSH/plugins/zsh-completions/src $fpath)
 
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
@@ -51,16 +54,18 @@ alias ....="cd ../../.."
 
 alias c-="cd -"
 alias ic="cd /Users/jgo/Library/Mobile\ Documents/com~apple~CloudDocs"
-alias vi="nvim"
+alias vi="lvim"
 alias viz="vi $ZSH/.zshrc"
 alias vig="vi ~/.gitconfig"
-alias viv="vi ~/.vimrc"
-alias via="vi $HOME/.config/alacritty/alacritty.toml"
+alias viw="vi $HOME/.config/wezterm/wezterm.lua"
 alias vin="vi $HOME/.config/nvim/init.vim"
+alias vit="vi $HOME/.config/tmux/tmux.conf"
+alias vitr="vi $HOME/.config/tmux/tmux.reset.conf"
+alias vil="vi $HOME/.config/lvim/config.lua"
+alias vis="vi $HOME/.config/starship/starship.toml"
 alias ~="cd ~"
 alias pi="ssh jgopi"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(starship init zsh)"
 
 alias ls="eza"
@@ -69,6 +74,8 @@ alias la="ls -a"
 alias lla="ls -al"
 alias lt="ls --tree"
 alias sz="source $ZSH/.zshrc"
+
+alias cat="bat"
 
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 
@@ -79,3 +86,8 @@ if type brew &>/dev/null; then
     autoload -Uz compinit
     compinit
 fi
+
+autoload -Uz compinit && compinit
+setopt AUTO_CD
+bindkey ";3D" backward-word
+bindkey ";3C" forward-word

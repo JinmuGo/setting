@@ -5,7 +5,7 @@
 	precomposeunicode = true
 	quotepath = false
 	autocrlf = input
-	editor = nvim
+	editor = lvim
     pager = delta
 [init]
 	defaultBranch = main

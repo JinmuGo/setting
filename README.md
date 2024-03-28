@@ -1,6 +1,5 @@
 ## Application
 
-- Alacritty
 - Figma
 - Slack
 - VScode
@@ -12,6 +11,7 @@
 - Arc
 - lunar vim
 - Publish or Perish
+- WezTerm
 
 ## Brew
 
@@ -33,23 +33,12 @@
 - autojump
 - stats
 
-## VSCode Extension
+## Browser Extension
 
-- Atom One Dark Pro Theme
-- Code Runner
-- CodeLLDB
-- Doxygen
-- ESLint
-- GitLens
-- Prettier
-- Vim
-- Material Icon
-- Remote - SSH
-- Live Server
-- Docker
-- Dev Containers
-- vscode-pdf
-- neovim
+- Zotero
+- Readwise
+- vimium
+- Language Reactor
 
 ## Font
 
