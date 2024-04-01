@@ -1,1 +1,0 @@
-https://github.com/omerxx/dotfiles/tree/master/tmux
