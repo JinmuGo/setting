@@ -32,6 +32,7 @@
 - nvim
 - autojump
 - stats
+- MonitorControl
 
 ## Browser Extension
 
