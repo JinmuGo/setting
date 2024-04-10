@@ -1,8 +1,4 @@
 {
-  "window.zoomLevel": 2,
-
-  // WORKBENCH SETTING
-
   "workbench.colorTheme": "One Dark Pro",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.statusBar.visible": false,
@@ -43,7 +39,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontFamily": "SFMono Nerd Font",
   "terminal.integrated.env.osx": {
     "CW_NEW_SESSION": "1"
   },
@@ -123,9 +119,24 @@
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/vscode_init.lua",
+  "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/init.vim",
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
-  "editor.fontFamily": "SFMono Nerd Font"
+  "editor.fontFamily": "SFMono Nerd Font",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "code-runner.runInTerminal": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": 2,
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.openRepositoryInParentFolders": "always",
+  "javascript.preferences.importModuleSpecifierEnding": "js",
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
