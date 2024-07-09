@@ -1,20 +1,23 @@
 {
-  "workbench.colorTheme": "One Dark Pro",
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.statusBar.visible": false,
-
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
+    // Customize colors here
     // "editorSuggestWidget.selectedBackground": "#231739",
     // "sideBar.background": "#140E1A",
-    // "list.activeSelectionBackground": "#ff0000"
+    // "list.activeSelectionBackground": "#ff0000",
     // "list.focusBackground": "#ff0000",
     // "list.hoverBackground": "#ff0000"
   },
-  // EDITOR SETTING
+  "window.zoomLevel": 2,
+  "window.confirmSaveUntitledWorkspace": false,
+  "window.titleBarStyle": "native",
+  "window.commandCenter": false,
 
+  // === Editor Settings ===
   "editor.minimap.enabled": false,
   "editor.guides.indentation": false,
   "editor.renderWhitespace": "none",
@@ -27,116 +30,225 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
+  "editor.fontFamily": "SFMono Nerd Font",
+  "editor.fontSize": 13,
+  "editor.fontLigatures": "'ss01', 'cv03', 'zero'",
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "editor.codeLensFontFamily": "SFMono Nerd Font",
+  "editor.scrollbar.verticalScrollbarSize": 5,
+  "editor.scrollbar.horizontalScrollbarSize": 5,
+  "editor.accessibilitySupport": "off",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
-  // GENERAL SETTING
-  "breadcrumbs.enabled": false,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  "explorer.compactFolders": false,
-  "extensions.ignoreRecommendations": true,
-
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
+  // === Terminal Settings ===
   "terminal.integrated.fontFamily": "SFMono Nerd Font",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.env.osx": {
     "CW_NEW_SESSION": "1"
   },
 
-  "accessibility.signals.lineHasInlineSuggestion": {
-    "sound": "off"
-  },
+  // === Explorer Settings ===
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "explorer.decorations.badges": false,
+  "explorer.openEditors.visible": 1,
+  "explorer.confirmPasteNative": false,
 
-  "accessibility.signals.sounds.volume": 0,
-  "editor.accessibilitySupport": "off",
-
-  // APC SETTING
-
-  "apc.menubar.compact": true,
-
-  "apc.header": {
-    "show": false
-  },
-
-  "apc.activityBar": {
-    "itemSize": 40,
-    "size": 40
-  },
-
-  "apc.listRow": {
-    "lists": ["explorer-folders-view", "quick-input-list", "results"]
-  },
-
-  // ANIMATION SETTING
-  "animations.Install-Method": "Apc Customize UI++",
-  "apc.imports": [
-    "file:///Users/jgo/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
-  ],
-  "animations.Active": "None",
-  "animations.Command-Palette": "Slide",
-  "animations.Enabled": false,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  // TODO HIGHLIGHT SETTING
-
-  "todohighlight.keywords": [
-    {
-      "text": "TODO",
-      "color": "#FFB6C1", // Light Pink
-      "backgroundColor": "#3f3f2f", // Desaturated dark green (complementary to Light Pink)
-      "overviewRulerColor": "rgba(255,182,193,0.8)",
-      "isWholeLine": true
-    },
-    {
-      "text": "FIXME",
-      "color": "#ADD8E6", // Light Blue
-      "backgroundColor": "#3f2f2f", // Desaturated dark orange (complementary to Light Blue)
-      "overviewRulerColor": "rgba(173,216,230,0.8)",
-      "isWholeLine": true
-    },
-    {
-      "text": "NOTE",
-      "color": "#3CB371", // Medium Sea Green
-      "backgroundColor": "#3f2f3f", // Desaturated dark magenta (complementary to Medium Sea Green)
-      "overviewRulerColor": "rgba(60,179,113,0.8)",
-      "isWholeLine": true
-    }
-  ],
-  "git.autofetch": true,
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "gitlens.showWelcomeOnInstall": false,
-  "gitlens.showWhatsNewAfterUpgrades": false,
-
-  // "terminal.integrated.tabs.enabled": false
-
-  // nvim
-
+  // === Extensions Settings ===
+  "extensions.ignoreRecommendations": true,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/init.vim",
+
+  // === Git Settings ===
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "always",
+  "gitlens.showWelcomeOnInstall": false,
+  "gitlens.showWhatsNewAfterUpgrades": false,
+
+  // === JavaScript/TypeScript Settings ===
+  "javascript.preferences.importModuleSpecifierEnding": "js",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // === Formatting Settings ===
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
-  "editor.fontFamily": "SFMono Nerd Font",
-  "terminal.integrated.defaultProfile.osx": "zsh",
-  "code-runner.runInTerminal": true,
-  "[typescript]": {
+  "[dockercompose]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": 2,
-  "security.workspace.trust.untrustedFiles": "open",
-  "git.openRepositoryInParentFolders": "always",
-  "javascript.preferences.importModuleSpecifierEnding": "js",
-  "[yaml]": {
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[mdx]": {
+    "editor.defaultFormatter": "unifiedjs.vscode-mdx"
+  },
+
+  // === Debug Settings ===
+  "debug.console.fontFamily": "SFMono Nerd Font",
+  "debug.console.fontSize": 15,
+  "debug.console.lineHeight": 35,
+  "debug.toolBarLocation": "docked",
+
+  // === Miscellaneous Settings ===
+  "security.workspace.trust.untrustedFiles": "open",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "code-runner.runInTerminal": true,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/init.vim",
+
+  // === Accessibility Settings ===
+  "accessibility.signals.lineHasInlineSuggestion": {
+    "sound": "off"
+  },
+
+  // === TODO Highlight Settings ===
+  "todohighlight.keywords": [
+    {
+      "text": "TODO",
+      "color": "#FFCC00",
+      "backgroundColor": "transparent",
+      "overviewRulerColor": "rgba(255, 204, 0, 0.8)"
+    },
+    {
+      "text": "FIXME",
+      "color": "#FF0000",
+      "backgroundColor": "transparent",
+      "overviewRulerColor": "rgba(255, 0, 0, 0.8)"
+    },
+    {
+      "text": "BUG",
+      "color": "#FF0000",
+      "backgroundColor": "transparent",
+      "overviewRulerColor": "rgba(255, 0, 0, 0.8)"
+    },
+    {
+      "text": "HACK",
+      "color": "#FFCC00",
+      "backgroundColor": "transparent",
+      "overviewRulerColor": "rgba(255, 204, 0, 0.8)"
+    },
+    {
+      "text": "NOTE",
+      "color": "#FF00FF",
+      "backgroundColor": "transparent",
+      "overviewRulerColor": "rgba(255, 0, 255, 0.8)"
+    },
+    {
+      "text": "INFO",
+      "color": "#33CCFF",
+      "backgroundColor": "transparent",
+      "overviewRulerColor": "rgba(51, 204, 255, 0.8)"
+    },
+    {
+      "text": "IDEA",
+      "color": "#33CCFF",
+      "backgroundColor": "transparent",
+      "overviewRulerColor": "rgba(51, 204, 255, 0.8)"
+    },
+    {
+      "text": "REVIEW",
+      "color": "#33CCFF",
+      "backgroundColor": "transparent",
+      "overviewRulerColor": "rgba(51, 204, 255, 0.8)"
+    },
+    {
+      "text": "REF",
+      "color": "#33CCFF",
+      "backgroundColor": "transparent",
+      "overviewRulerColor": "rgba(51, 204, 255, 0.8)"
+    },
+    {
+      "text": "IDEA",
+      "color": "#33CCFF",
+      "backgroundColor": "transparent",
+      "overviewRulerColor": "rgba(51, 204, 255, 0.8)"
+    }
+  ],
+
+  // === APC Settings ===
+  "apc.imports": [
+    "file:///Users/jgo/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
+  ],
+  "apc.electron": {
+    "frame": false,
+    "titleBarStyle": "customButtonsOnHover",
+    "trafficLightPosition": {
+      "x": 10,
+      "y": 12
+    },
+    "customButtonsOnHover": true
+  },
+  "apc.header": {
+    "height": 40
+  },
+  "apc.listRow": {
+    "fontSize": 13
+  },
+  "apc.sidebar.titlebar": {
+    "height": 40
+  },
+  "apc.activityBar": {
+    "size": 40,
+    "itemSize": 40,
+    "itemMargin": 0
+  },
+  "apc.menubar.compact": false,
+  "apc.statusBar": {
+    "position": "editor-bottom"
+  },
+  "apc.stylesheet": {
+    ".title-label": "display: none !important",
+    ".composite.title": "display: block !important",
+    ".monaco-workbench .part.sidebar .title-actions .actions-container": "justify-content: space-evenly !important",
+    ".quick-input-widget.show-file-icons, .editor-widget.find-widget": "box-shadow: none !important",
+    ".filematch .monaco-icon-label:before, .custom-list-row.results .monaco-list-row .monaco-icon-label:before": "background-position: 0 bottom !important",
+    ".filematch .monaco-count-badge": "padding: 5px 6px 0 6px !important",
+    ".sidebar .title-label": "padding-left: 14px !important",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+    ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #67D0FF 10%, #C45DFF 100%)",
+    ".quick-input-list-row div": "display: flex !important; align-items: center !important",
+    ".sidebar .title-label h2": "line-height: 2.8 !important",
+    ".monaco-editor .scroll-decoration": "display: none !important",
+    ".monaco-scrollable-element > .shadow.top": "display: none !important"
+  },
+  "workbench.productIconTheme": "fluent-icons",
+  "eslint.codeActionsOnSave.rules": null,
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "workbench.colorTheme": "One Dark Pro",
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   }
 }
+
